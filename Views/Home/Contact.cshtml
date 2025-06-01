@@ -1,0 +1,51 @@
+﻿@{
+    ViewData["Title"] = "Contact Us";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+}
+
+<div class="contact-container py-5">
+    <div class="container">
+        <h1 class="text-center text-light fw-bold">Contact Us</h1>
+        <hr class="mb-4 bg-light" />
+
+        <div class="row">
+            <!-- Contact Information -->
+            <div class="col-md-5">
+                <div class="contact-info p-4 rounded shadow">
+                    <h3 class="fw-bold text-success">Get in Touch</h3>
+                    <p class="lead">We are here to assist you. Reach out to us using the details below.</p>
+                    <ul class="list-unstyled">
+                        <li><i class="fa fa-map-marker"><strong> Address:</strong></i> Kirulapana, Colombo 05, SriLanka</li>
+                        <li><i class="fa fa-phone"> <strong> Phone: </strong></i> 0112549865</li>
+                        <li><i class="fa fa-envelope"><strong> Email:</strong></i> support@warehouse.com</li>
+                        <li><i class="fa fa-clock-o"><strong> Working Hours:</strong></i> Mon - Fri: 9 AM - 6 PM</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="col-md-7">
+                <div class="contact-form p-4 rounded shadow">
+                    <h3 class="fw-bold text-success text-center">Send Us a Message</h3>
+                    <form>
+                        <div class="mb-3">
+                            <label class="form-label">Full Name</label>
+                            <input type="text" class="form-control" placeholder="Enter your name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Email Address</label>
+                            <input type="email" class="form-control" placeholder="Enter your email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Message</label>
+                            <textarea class="form-control" rows="4" placeholder="Enter your message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

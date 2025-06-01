@@ -1,0 +1,172 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+/* About Page*/
+.about-container {
+    background: linear-gradient(to right, #28a745, #1e5220);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+img{
+    border:10px solid lightgreen;
+}
+
+/* Content Box */
+.content-box {
+    background: rgba(255, 255, 255, 0.9);
+    border-left: 5px solid #28a745;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    text-align:justify;
+}
+
+
+
+.feature-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 280px; /* Set a minimum height */
+    max-height: 300px; /* Set a max height for uniformity */
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 10px;
+    border: 3px solid #28a745;
+    box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Ensure all columns are the same height */
+.row .col-md-3 {
+    display: flex;
+}
+
+/* Hover Effect */
+.feature-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Background with Gradient */
+.about-container {
+    background: linear-gradient(to right, #28a745, #1e5220);
+    min-height: 100vh;
+    padding-bottom: 60px; /* Space before footer */
+}
+
+/* About Page Styling */
+.about-page {
+    padding-bottom: 80px; /* Space between content and footer */
+}
+
+/* Equal Height for Content Boxes */
+.equal-height-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 250px; /* Ensures all boxes have the same height */
+    max-height: 300px;
+}
+
+/* Box Styling */
+.box-container {
+    padding: 20px;
+    border-radius: 10px;
+    background: #f8f9fa;
+    border: 2px solid #28a745;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Footer Styling (Shorter & Fixed at Bottom) */
+.footer {
+    background-color: #2C3E50;
+    color: white;
+    text-align: center;
+    width: 100%;
+    padding: 10px 0;
+    font-size: 14px;
+    position: relative;
+    bottom: 0;
+}
+
+/*Contact page*/
+.contact-page {
+    min-height: 85vh; /* Ensures enough content space before footer */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 50px; /* Prevents content from touching footer */
+}
+
+/* Footer Styling: Reduce Height */
+.footer {
+    background-color: #2C3E50;
+    color: white;
+    text-align: center;
+    width: 100%;
+    padding: 8px 0; /* Reduced padding */
+    font-size: 14px; /* Adjusted font size */
+}
+
+.contact-container {
+    background: linear-gradient(to right, #357a25, #1a5220);
+    min-height: 100vh; /* Ensures full-page height */
+    display: flex;
+    align-items: center;
+}
+
+/* Contact Information Box */
+.contact-info {
+    background: lightblue;
+    border-left: 8px solid #28a745;
+    border-bottom:10px double darkgreen;
+}
+
+/* Contact Form Styling */
+.contact-form {
+    background: #ffffff;
+    border-left: 5px solid #28a745;
+}
+
+    /* Form Inputs */
+    .contact-form input, .contact-form textarea {
+        border: 1px solid #28a745;
+        border-radius: 5px;
+    }
+
+    /* Form Button */
+    .contact-form button {
+        background: #28a745;
+        border: none;
+        transition: 0.3s;
+    }
+
+        .contact-form button:hover {
+            background: #1e7e34;
+        }
+
+

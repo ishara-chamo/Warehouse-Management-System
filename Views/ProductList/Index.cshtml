@@ -1,0 +1,48 @@
+﻿@model List<Warehouse.Models.Entites.Products>
+
+<h1> Product List</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>#</th>
+
+            <th>Product Name</th>
+            <th>Description</th>
+            <th>Category ID</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Action</th>
+
+
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var stu in Model)
+        {
+            <!--Read all table details-->
+            <tr>
+                <td>@stu.Product_Name</td>
+                <td>@stu.Product_Description</td>
+                <td>@stu.Category_RowID</td>
+                <td>@stu.Product_Price</td>
+                <td>@stu.Product_Quantity</td>
+
+
+
+                <td>
+                    <div class="d-flex flex-column flex-md-row gap-2 ">
+
+                        <a class="btn btn-primary" asp-controller="Product" asp-action="Details" asp-route-Guid="@stu.Product_GUID">View</a>
+                        <a class="btn btn-primary" asp-controller="Product" asp-action="Index" asp-route-editid="@stu.Product_GUID">Edit</a>
+
+                        <form method="post" asp-controller="Product" asp-action="Delete" onsubmit="return confirm('are you sure delete this detail?');">
+                            <input type="hidden" name="deleteid" value="@stu.Product_GUID" />
+                            <button type="submit" class="btn btn-danger">Delete</button>
+                        </form>
+                    </div>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

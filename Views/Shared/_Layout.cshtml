@@ -1,0 +1,137 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Warehouse</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/Warehouse.styles.css" asp-append-version="true" />
+
+    <style>
+        .footer {
+            background-color: darkgreen;
+            color: white;
+            text-align: center;
+            width: 100%;
+            height:10%;
+        }
+
+        .logo {
+            height: 40px; 
+            width: auto;
+            border-radius: 5px; 
+        }
+
+        .navbar-nav .dropdown-menu {
+            background-color: #4CAF50; /* Match navbar */
+        }
+
+        .navbar-nav .dropdown-item {
+            color: white;
+        }
+
+            .navbar-nav .dropdown-item:hover {
+                background-color: #1A252F; /* Darker hover effect */
+            }
+    </style>
+
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #357a25; border-bottom: 4px solid white;">
+            <div class="container-fluid">
+                <a class="navbar-brand d-flex align-items-center" href="@Url.Action("Index", "Home")">
+                    <img src="~/images/w.jpeg" alt="Logo" class="logo">
+                    <span class="ml-2"> Warehouse Inventory</span>
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <!-- Home Dropdown -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="Home" id="homeDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Home
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="homeDropdown">
+                                <li><a class="dropdown-item" href="@Url.Action("Index", "Product")">Products</a></li>
+                                <li><a class="dropdown-item" href="@Url.Action("Index", "Product")">Product List</a></li>
+
+                                <li><a class="dropdown-item" href="@Url.Action("Index", "Category")">Categories</a></li>
+                                <li><a class="dropdown-item" href="@Url.Action("Index", "Category")">Category List</a></li>
+
+                                <li><a class="dropdown-item" href="@Url.Action("Index", "StockMovement")">Stock Movements</a></li>
+                                <li><a class="dropdown-item" href="@Url.Action("Index", "StockMovement")">Stock List</a></li>
+
+                                <li><a class="dropdown-item" href="@Url.Action("Index", "Warehouse")">Warehouses</a></li>
+                                <li><a class="dropdown-item" href="@Url.Action("Index", "Warehouse")">Warehouse List</a></li>
+
+                                <li><a class="dropdown-item" href="@Url.Action("Index", "Supplier")">Suppliers</a></li>
+                                <li><a class="dropdown-item" href="@Url.Action("Index", "Supplier")">Supplier List</a></li>
+
+
+                            </ul>
+                        </li>
+
+                        <!-- About Page -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="@Url.Action("About", "Home")">About</a>
+                        </li>
+
+                        <!-- Contact Page -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="@Url.Action("Contact", "Home")">Contact Us</a>
+                        </li>
+                    </ul>
+
+                    <!-- Right Side: Login/Register -->
+                    <ul class="navbar-nav ms-auto">
+                        @if (User.Identity.IsAuthenticated)
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link" href="@Url.Action("Logout", "Account")">Logout</a>
+                            </li>
+                        }
+                        else
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link" href="@Url.Action("Login", "Account")">Login</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="@Url.Action("Register", "Account")">Register</a>
+                            </li>
+                        }
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="footer">
+        <div class="container text-center">
+            <p>&copy; @DateTime.Now.Year Warehouse Inventory Management | All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

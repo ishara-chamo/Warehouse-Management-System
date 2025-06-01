@@ -1,0 +1,60 @@
+﻿
+    /*register page*/
+body {
+    background: url('/images/back.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Arial', sans-serif;
+}
+
+    .register-container
+
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.register-box {
+    background: linear-gradient(to right, rgba(168, 224, 99, 0.8), rgba(86, 171, 47, 0.8));
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    width: 350px;
+    text-align: center;
+}
+
+    .register-box h2 {
+        color: white;
+        margin-bottom: 20px;
+    }
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.btn-register {
+    width: 100%;
+    background: #28a745;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+    .btn-register:hover {
+        background: #1e5220;
+    }
+
+}

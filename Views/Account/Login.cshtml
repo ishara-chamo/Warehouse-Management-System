@@ -1,0 +1,43 @@
+﻿@model Warehouse.Models.LoginViewModel
+
+@{
+    ViewData["Title"] = "Login";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="~/css/style.css" />
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-box">
+            <h2 class="text-center">Welcome Back</h2>
+            <p class="text-center text-muted">Please sign in to continue</p>
+
+            <form asp-action="Login" method="post">
+                <div class="form-group">
+                    <label asp-for="Email"></label>
+                    <input asp-for="Email" class="form-control" placeholder="Enter email" required>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="Password"></label>
+                    <input asp-for="Password" type="password" class="form-control" placeholder="Enter password" required>
+                </div>
+
+                <div class="form-group form-check">
+                    <input asp-for="RememberMe" class="form-check-input">
+                    <label asp-for="RememberMe" class="form-check-label">Remember me</label>
+                </div>
+
+                <button type="submit" class="btn btn-success btn-block">Login</button>
+
+                <div class="text-center mt-3">
+                    <a href="#">Forgot Password?</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

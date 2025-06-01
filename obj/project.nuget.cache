@@ -1,0 +1,53 @@
+{
+  "version": 2,
+  "dgSpecHash": "68WQiLt780s=",
+  "success": false,
+  "projectFilePath": "G:\\Warehouse Project Latest\\Warehouse\\Warehouse\\Warehouse.csproj",
+  "expectedPackageFiles": [],
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Error",
+      "message": "Failed to download package 'Microsoft.EntityFrameworkCore.Tools.8.0.11' from 'https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworkcore.tools/8.0.11/microsoft.entityframeworkcore.tools.8.0.11.nupkg'.\r\nAn error occurred while sending the request.\r\n  Unable to connect to the remote server\r\n  A socket operation was attempted to an unreachable network [2402:d000:130:1::684b:5408]:443"
+    },
+    {
+      "code": "Undefined",
+      "level": "Error",
+      "message": "Failed to download package 'Microsoft.DotNet.Scaffolding.Shared.8.0.7' from 'https://api.nuget.org/v3-flatcontainer/microsoft.dotnet.scaffolding.shared/8.0.7/microsoft.dotnet.scaffolding.shared.8.0.7.nupkg'.\r\nAn error occurred while sending the request.\r\n  The remote name could not be resolved: 'api.nuget.org'"
+    },
+    {
+      "code": "Undefined",
+      "level": "Error",
+      "message": "Failed to download package 'Microsoft.VisualStudio.Web.CodeGenerators.Mvc.8.0.7' from 'https://api.nuget.org/v3-flatcontainer/microsoft.visualstudio.web.codegenerators.mvc/8.0.7/microsoft.visualstudio.web.codegenerators.mvc.8.0.7.nupkg'.\r\nAn error occurred while sending the request.\r\n  The remote name could not be resolved: 'api.nuget.org'"
+    },
+    {
+      "code": "Undefined",
+      "level": "Error",
+      "message": "Failed to download package 'Microsoft.AspNetCore.Identity.UI.8.0.11' from 'https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.identity.ui/8.0.11/microsoft.aspnetcore.identity.ui.8.0.11.nupkg'.\r\nAn error occurred while sending the request.\r\n  The remote name could not be resolved: 'api.nuget.org'"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Failed to retrieve information about 'Microsoft.EntityFrameworkCore.Tools' from remote source 'https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworkcore.tools/index.json'.",
+      "libraryId": "Microsoft.EntityFrameworkCore.Tools"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Failed to retrieve information about 'Microsoft.VisualStudio.Web.CodeGenerators.Mvc' from remote source 'https://api.nuget.org/v3-flatcontainer/microsoft.visualstudio.web.codegenerators.mvc/index.json'.",
+      "libraryId": "Microsoft.VisualStudio.Web.CodeGenerators.Mvc"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Failed to retrieve information about 'Microsoft.DotNet.Scaffolding.Shared' from remote source 'https://api.nuget.org/v3-flatcontainer/microsoft.dotnet.scaffolding.shared/index.json'.",
+      "libraryId": "Microsoft.DotNet.Scaffolding.Shared"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Failed to retrieve information about 'Microsoft.AspNetCore.Identity.UI' from remote source 'https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.identity.ui/index.json'.",
+      "libraryId": "Microsoft.AspNetCore.Identity.UI"
+    }
+  ]
+}
